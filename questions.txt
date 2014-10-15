@@ -1,0 +1,11 @@
+0.  Oxford dictionary says “an artificial long word said to mean a lung disease caused by inhaling very fine ash and sand dust.”
+1.  returns resouce usage measures for a calling process, all children of the calling processes, or the calling thread
+2.  16
+3.  a pointer to an existing rusage is far less resource intense than creating a copy
+4.  The for loop gets a char from the file, and will continue to get chars and examine them as long as the end of the file has not been reached.  Whenever a non-char value has been reached (that isn't an int or to long), it will check the current word and start loading in a new word. 
+5.  fscanf wouldn't be able to detect numbers within the strings
+6.  so that the values they point to cannot accidently be modified, as they are not copies passed to dictionary
+7.  I used a trie with 27 child nodes (0-26) and a bool is_word to determine if a word exists.
+8.  Once compiled properly, my code performed virtually identically to the staff inplementation.
+9.  I made no changes to the code once it compiled and ran sucessfully, as it was already very fast.  I did, however, optimize the code as I troubleshot.  Specifically, having the unload function call a new function that recursively unloaded the trie likely made a large difference in performance.
+10. Being able to add parameters to the unload function would have allowed for less overhead (not needing to create and call an additional function).
